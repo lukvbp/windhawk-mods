@@ -2,7 +2,7 @@
 // @id              taskbar-fade
 // @name            Taskbar Fade
 // @description     Reduces visual clutter by automatically dimming or hiding the taskbar when idle. Ideal for focused workflows and preventing OLED burn-in.
-// @version         2.1.2
+// @version         2.2.0
 // @author          Lukvbp
 // @github          https://github.com/lukvbp
 // @include         windhawk.exe
@@ -146,7 +146,7 @@ void LoadSettings() {
     if (rawFPS > 120) {
         rawFPS = 120;
     }
-if (rawHoverDelay < 0) {
+    if (rawHoverDelay < 0) {
         rawHoverDelay = 0;
     }
     if (rawHoverDelay > 10000) {
